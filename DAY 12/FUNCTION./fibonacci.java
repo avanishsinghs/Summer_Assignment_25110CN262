@@ -1,6 +1,4 @@
 
-
-
 import java.util.Scanner;
 public class fibonacci  {
     public static void fibo(int n) {
@@ -12,7 +10,7 @@ System.out.print(a+" ");
     b=c;
 }
 
-    }
+}
     public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
    System.out.print("enter n =  ");
@@ -26,5 +24,4 @@ fibo(n);
 
     }
     
-} 
-
+}
