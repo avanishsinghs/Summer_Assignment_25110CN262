@@ -29,7 +29,7 @@ public class evenandoddelements {
          
 
         }
-        System.out.println(" the even elements is "+even);
+        System.out.println(" the even elements are "+even);
 
         int odd = 0;
          System.out.print("the odd elements are " );
