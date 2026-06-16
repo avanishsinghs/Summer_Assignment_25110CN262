@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter array size : ");
+       int n = sc.nextInt();
+
+        int arr[] = new int[n];
+
+        System.out.println("Enter array elements:");
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Array after removing duplicates: ");
+
+        for(int i = 0; i < arr.length; i++) {
+            int flag = 0;
+
+            for(int j = 0; j < i; j++) {
+                if(arr[i] == arr[j]) {
+                    flag = 1;
+                    break;
+                }
+            }
+
+            if(flag == 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
